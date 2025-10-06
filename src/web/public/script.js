@@ -107,66 +107,6 @@ class BackgroundAnimation {
     }
 }
 
-// ===== UPLOAD ANIMATION SYSTEM =====
-class UploadAnimation {
-    constructor() {
-        this.uploadSuccess = document.getElementById('uploadSuccess');
-        this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    }
-    
-    showSuccess() {
-        this.uploadSuccess.style.display = 'flex';
-        this.uploadSuccess.classList.add('active');
-        
-        if (!this.reducedMotion) {
-            this.createParticleBurst();
-        }
-        
-        // Hide after 2 seconds
-        setTimeout(() => {
-            this.hideSuccess();
-        }, 2000);
-    }
-    
-    hideSuccess() {
-        this.uploadSuccess.classList.remove('active');
-        setTimeout(() => {
-            this.uploadSuccess.style.display = 'none';
-        }, 400);
-    }
-    
-    createParticleBurst() {
-        const uploadIcon = this.uploadSuccess.querySelector('.upload-icon-success');
-        const rect = uploadIcon.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        
-        for (let i = 0; i < 8; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'upload-particles';
-            
-            const angle = (i / 8) * Math.PI * 2;
-            const distance = 60 + Math.random() * 40;
-            const x = Math.cos(angle) * distance;
-            const y = Math.sin(angle) * distance;
-            
-            particle.style.left = centerX + 'px';
-            particle.style.top = centerY + 'px';
-            particle.style.setProperty('--particle-x', x + 'px');
-            particle.style.setProperty('--particle-y', y + 'px');
-            
-            document.body.appendChild(particle);
-            
-            particle.style.animation = 'particleBurst 0.6s ease-out forwards';
-            
-            setTimeout(() => {
-                if (particle.parentNode) {
-                    particle.parentNode.removeChild(particle);
-                }
-            }, 600);
-        }
-    }
-}
 
 let selectedFile = null;
 let activeSmells = {
@@ -203,9 +143,6 @@ function handleFileSelect(event) {
         document.querySelector('.upload-area h3').textContent = `Selected: ${file.name}`;
         document.querySelector('.upload-area p').textContent = `File size: ${(file.size / 1024).toFixed(1)} KB`;
         updateAnalyzeButton();
-        
-        // Show upload success animation
-        window.uploadAnimation.showSuccess();
     }
 }
 
@@ -233,9 +170,6 @@ uploadArea.addEventListener('drop', function(e) {
         document.querySelector('.upload-area h3').textContent = `Selected: ${file.name}`;
         document.querySelector('.upload-area p').textContent = `File size: ${(file.size / 1024).toFixed(1)} KB`;
         updateAnalyzeButton();
-        
-        // Show upload success animation
-        window.uploadAnimation.showSuccess();
     }
 });
 
@@ -409,7 +343,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize background animation
     window.backgroundAnimation = new BackgroundAnimation();
-    
-    // Initialize upload animation
-    window.uploadAnimation = new UploadAnimation();
 });
