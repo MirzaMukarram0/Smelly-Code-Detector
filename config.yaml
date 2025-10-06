@@ -1,0 +1,25 @@
+smells:
+  LongMethod: true
+  GodClass: true
+  DuplicatedCode: true
+  LargeParameterList: true
+  MagicNumbers: true
+  FeatureEnvy: true
+
+thresholds:
+  LongMethod: 40
+  LargeParameterList: 5
+  GodClassMethods: 10
+  GodClassFields: 15
+  DuplicatedCodeSimilarity: 0.8
+  FeatureEnvyThreshold: 3
+
+output:
+  format: "json" # json or markdown
+  includeLineNumbers: true
+  verboseMode: false
+
+analysis:
+  ignoreComments: true
+  ignoreEmptyLines: true
+  caseSensitive: true
