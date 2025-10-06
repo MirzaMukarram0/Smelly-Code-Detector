@@ -1,0 +1,442 @@
+{
+  "file": "smelly_code.py",
+  "filePath": "samples/smelly_code.py",
+  "language": "Python",
+  "activeSmells": [
+    "LongMethod",
+    "DuplicatedCode",
+    "MagicNumbers"
+  ],
+  "detected": [
+    {
+      "type": "LongMethod",
+      "lines": "170-217",
+      "description": "Method 'generate_processing_report()' exceeds 40 lines (48 lines).",
+      "details": "Function has 48 lines, threshold is 40",
+      "severity": "low",
+      "methodName": "generate_processing_report",
+      "actualLines": 48,
+      "threshold": 40
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "47-51, 224-228",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "47-51, 250-254",
+      "description": "Code blocks have 81% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.8085106382978724,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "48-52, 225-229",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "48-52, 251-255",
+      "description": "Code blocks have 87% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.8656716417910448,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "49-53, 226-230",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "49-53, 252-256",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "50-54, 227-231",
+      "description": "Code blocks have 85% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.8493150684931507,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "51-55, 228-232",
+      "description": "Code blocks have 89% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.8865979381443299,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "55-59, 232-236",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "56-60, 233-237",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "57-61, 234-238",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "61-65, 238-242",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "62-66, 239-243",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "63-67, 240-244",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "221-225, 247-251",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "224-228, 250-254",
+      "description": "Code blocks have 81% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.8085106382978724,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "225-229, 251-255",
+      "description": "Code blocks have 87% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.8656716417910448,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "226-230, 252-256",
+      "description": "Code blocks have 100% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "high",
+      "similarity": 1,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "227-231, 253-257",
+      "description": "Code blocks have 90% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.8985507246376812,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "DuplicatedCode",
+      "lines": "228-232, 254-258",
+      "description": "Code blocks have 86% similarity.",
+      "details": "Duplicated code blocks detected",
+      "severity": "low",
+      "similarity": 0.86,
+      "blockSize": 5,
+      "threshold": 0.8
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "49",
+      "description": "Magic numbers detected: 5, 254.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "5",
+        "254"
+      ],
+      "lineContent": "if len(email) < 5 or len(email) > 254:  # Magic numbers!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "57",
+      "description": "Magic numbers detected: 13, 120.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "13",
+        "120"
+      ],
+      "lineContent": "if age < 13 or age > 120:  # Magic numbers!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "63",
+      "description": "Magic numbers detected: 15.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "15"
+      ],
+      "lineContent": "if len(phone) < 10 or len(phone) > 15:  # Magic numbers!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "69",
+      "description": "Magic numbers detected: 15000, 1000000.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "15000",
+        "1000000"
+      ],
+      "lineContent": "if salary < 15000 or salary > 1000000:  # Magic numbers!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "86",
+      "description": "Magic numbers detected: 25.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "25"
+      ],
+      "lineContent": "if user_data['age'] < 25:  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "88",
+      "description": "Magic numbers detected: 65.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "65"
+      ],
+      "lineContent": "elif user_data['age'] < 65:  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "124",
+      "description": "Magic numbers detected: 18.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "18"
+      ],
+      "lineContent": "if age < 18:    # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "126",
+      "description": "Magic numbers detected: 25.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "25"
+      ],
+      "lineContent": "elif age < 25:  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "128",
+      "description": "Magic numbers detected: 40.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "40"
+      ],
+      "lineContent": "elif age < 40:  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "130",
+      "description": "Magic numbers detected: 65.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "65"
+      ],
+      "lineContent": "elif age < 65:  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "140",
+      "description": "Magic numbers detected: 11.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "11"
+      ],
+      "lineContent": "elif len(digits) == 11 and digits[0] == '1':  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "156",
+      "description": "Magic numbers detected: 3600.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "3600"
+      ],
+      "lineContent": "self.cache.set(cache_key, user_data, 3600)  # Magic number! (3600 seconds)"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "198",
+      "description": "Magic numbers detected: 50.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "50"
+      ],
+      "lineContent": "elif processing_rate > 50:  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "200",
+      "description": "Magic numbers detected: 20.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "20"
+      ],
+      "lineContent": "elif processing_rate > 20:  # Magic number!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "207",
+      "description": "Magic numbers detected: 10240.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "10240"
+      ],
+      "lineContent": "if len(report_json) > 10240:  # Magic number! (10KB)"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "226",
+      "description": "Magic numbers detected: 5, 254.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "5",
+        "254"
+      ],
+      "lineContent": "if len(email) < 5 or len(email) > 254:  # Same magic numbers!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "234",
+      "description": "Magic numbers detected: 13, 120.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "13",
+        "120"
+      ],
+      "lineContent": "if age < 13 or age > 120:  # Same magic numbers!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "240",
+      "description": "Magic numbers detected: 15.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "15"
+      ],
+      "lineContent": "if len(phone) < 10 or len(phone) > 15:  # Same magic numbers!"
+    },
+    {
+      "type": "MagicNumbers",
+      "lines": "252",
+      "description": "Magic numbers detected: 5, 254.",
+      "details": "Consider defining these as named constants",
+      "severity": "low",
+      "magicNumbers": [
+        "5",
+        "254"
+      ],
+      "lineContent": "if len(email) < 5 or len(email) > 254:  # Same magic numbers again!"
+    }
+  ],
+  "summary": {
+    "totalSmells": 40,
+    "uniqueSmellTypes": 3,
+    "linesAnalyzed": 291
+  }
+}
