@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: smelly-code-detector
+    env: node
+    buildCommand: npm install
+    startCommand: node src/web/server.js
+    healthCheckPath: /health
+    plan: free
+    region: oregon
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    scaling:
+      minInstances: 1
+      maxInstances: 1
